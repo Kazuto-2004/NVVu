@@ -1,18 +1,14 @@
-#include <stdio.h>
+#include<stdio.h>
 int main(){
-	int i,in, uoc =0 ;
-	printf("Nhap vao so nguyen: ");
-	scanf("%d:", &in);
-	printf("Cac uoc so la: ");
-	
-	for(i=1; i<=in ; i++ )
-	if (in%i == 0);
-	
-	{
-		printf("%d, ",i);
-		uoc++;
-	}
-	 printf("\nSo uoc so la %d",uoc);
-	
-	
+    int n;
+    int chia;
+    int s = 0;
+    printf("Nhap n: ");
+    scanf("%d",&n);
+    for(;n!=0;){
+        chia = n % 10;
+        s += chia;
+        n /= 10;
+    }    
+    printf("%d",s);
 }
